@@ -9,7 +9,7 @@ We are excited to present you with an interesting task where you'll be developin
 Your task is to create a ToDo application that interacts with an already provided ToDo API. The application should display the tasks in a table as shown in the screenshot provided. The main screen of the app should be designed in a pixel-perfect way to match the screenshot. 
 You will be using React for this task, and we expect you to leverage best practices for state management, component structure, and other aspects of a modern React application.
 
-![main screen](screenshots/todo_01.png)
+![main screen](screenshots/01_main_screen.png)
 
 ## Design
 
@@ -17,7 +17,7 @@ To help you with the design, we have provided a screenshot of the application, a
 
 - Google Font - [Nunito](https://fonts.google.com/specimen/Nunito?query=nunito)
 - Figma Design - [ToDo App Design](https://www.figma.com/file/bWThNKVhrueQ2T6Av8Erh8/To-do-list?node-id=0%3A1&t=J5sGg96ADAltbOFc-1)
-
+- Screenshots of the app
 
 ## What we're looking for
 
@@ -27,24 +27,23 @@ To help you with the design, we have provided a screenshot of the application, a
 - Clear state management
 ## Instructions
 
-1. Create a new React application using `create-react-app` or your preferred method.
+1. Create a new React application using `create-react-app` or your preferred method (`vit` etc`).
 2. Set up your local development environment.
 3. Use the provided API key to fetch the data from the API.
 4. Implement the design as provided in the screenshot and Figma file.
 5. Your application should be able to run locally using the `npm start` command.
 
-Please note that the task is time-bound and should ideally be completed within 3 hours. However, we value quality over speed, so don't rush if you need a bit more time.
-
+Please note that the task is time-bound and should ideally be completed within 3 hours.
 ## Submission
 
 Once you've finished, please follow these steps to submit your work:
 
 1. Ensure all of your code is committed to your local Git repository.
 2. Zip your entire project directory, or push your code to a GitHub repository.
-3. If you've chosen to zip your project, please email the zip file as an attachment to [your-email@your-company.com].
-4. If you've chosen to use a GitHub repository, please email the URL of your repository to [your-email@your-company.com].
+3. If you've chosen to zip your project, please email the zip file as an attachment to [devtask@sygnia.co].
+4. If you've chosen to use a GitHub repository, please email the URL of your repository to [devtask@sygnia.co].
 
-Please make sure you submit your solution within the stipulated time frame, allowing us to review your work promptly.
+Please make sure you submit your solution within the time frame.
 
 ## Few words
 
