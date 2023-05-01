@@ -2,11 +2,11 @@
 
 Hello and welcome!
 
-We are excited to present you with an interesting task where you'll be developing a ToDo application using React. This task is designed to test your React skills, attention to detail, and ability to work with external APIs. Don't worry, we've got all the assets and instructions you need!
+We are excited to present you with a task where you'll be developing a ToDo application using React. This task is designed to test your React skills, attention to detail, and ability to work with external APIs. Don't worry, we've got all the assets and instructions you need!
 
 ## The Task
 
-Your task is to create a ToDo application that interacts with an already provided ToDo API. The application should display the tasks in a table as shown in the screenshot provided. The main screen of the app should be designed in a pixel-perfect way to match the screenshot. 
+Your task is to create a ToDo app that interacts with an already provided ToDo API. The application should display the tasks in a table as shown in the screenshot provided. The main screen of the app should be designed in a pixel-perfect way to match the screenshot. 
 You will be using React for this task, and we expect you to leverage best practices for state management, component structure, and other aspects of a modern React application.
 
 ![main screen](screenshots/01_main_screen.png)
