@@ -1,0 +1,8 @@
+.DS_STORE
+
+# IDEs
+.idea/
+.vscode
+
+# Node modules.
+node_modules/
