@@ -47,7 +47,7 @@ Please make sure you submit your solution within the time frame.
 
 ## Few words
 
-Remember, this is not just about getting the task done; we want to see your problem-solving skills, creativity, and attention to detail. Take a deep breath, and start coding! This is an opportunity to show us what you can do. Good luck, and most importantly, have fun! 
+Remember, this is not just about getting the task done; we want to see your problem-solving skills, creativity, and attention to detail. Good luck, and most importantly, have fun! 
 
 We are looking forward to reviewing your solution!
 
