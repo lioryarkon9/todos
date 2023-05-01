@@ -27,13 +27,13 @@ To help you with the design, we have provided a screenshot of the application, a
 - Clear state management
 ## Instructions
 
-1. Create a new React application using `create-react-app` or your preferred method (`vit` etc`).
+1. Create a new React application using `create-react-app` / `vite` or any other method you prefer.
 2. Set up your local development environment.
 3. Use the provided API key to fetch the data from the API.
 4. Implement the design as provided in the screenshot and Figma file.
 5. Your application should be able to run locally using the `npm start` command.
 
-Please note that the task is time-bound and should ideally be completed within 3 hours.
+Please note that the task is time-bound and should be completed within 3 hours.
 ## Submission
 
 Once you've finished, please follow these steps to submit your work:
