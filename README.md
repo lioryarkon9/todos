@@ -40,7 +40,7 @@ Once you've finished, please follow these steps to submit your work:
 
 1. Ensure all of your code is committed to your local Git repository.
 2. Zip your entire project directory, or push your code to a GitHub repository.
-3. Use [this form](https://forms.monday.com/forms/70b55408d95c01007bffa0237e807106?r=use1) to upload your solution.
+3. Use [this form](https://forms.monday.com/forms/6ef7a9dd1dfa409814ecec052fcb7ad0?r=use1) to upload your solution.
 
 Please make sure you submit your solution within the time frame.
 
