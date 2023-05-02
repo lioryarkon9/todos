@@ -40,8 +40,7 @@ Once you've finished, please follow these steps to submit your work:
 
 1. Ensure all of your code is committed to your local Git repository.
 2. Zip your entire project directory, or push your code to a GitHub repository.
-3. If you've chosen to zip your project, please email the zip file as an attachment to devtask@sygnia.co
-4. If you've chosen to use a GitHub repository, please email the URL of your repository to devtask@sygnia.co
+3. Use [this form](https://forms.monday.com/forms/70b55408d95c01007bffa0237e807106?r=use1) to upload your solution.
 
 Please make sure you submit your solution within the time frame.
 
