@@ -32,6 +32,7 @@ To help you with the design, we have provided a screenshot of the application, a
 3. Use the provided API key to fetch the data from the API.
 4. Implement the design as provided in the screenshot and Figma file.
 5. Your application should be able to run locally using the `npm start` command.
+6. Feel free to use your favorite packages or assistance via chatGPT 
 
 Please note that the task is time-bound and should be completed within 3 hours.
 ## Submission
