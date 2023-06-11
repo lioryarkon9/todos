@@ -29,7 +29,7 @@ To help you with the design, we have provided a screenshot of the application, a
 
 Create a new React application using `create-react-app` / `vite` or any other method you prefer.
 
-The task is divided into 6 steps. please pass each step at a time, but keep previous steps working. Try to complete as many steps as you can:
+The task is divided into 6 steps. Try to complete as many steps as you can:
   1. Start with implementing the basic functionality using local state - present a list of mock todo items in the main table + support sorting (by default items should be sorted by their created time ascending).
   2. Make the table look as closely as you can to the design in the screenshots and Figma.
   3. Add the top bar - TODO title, tasks summary legend and avatar.
