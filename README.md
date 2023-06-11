@@ -6,14 +6,14 @@ We are excited to present you with a task where you'll be developing a ToDo appl
 
 ## The Task
 
-Your task is to create a ToDo app that interacts with an already provided ToDo API. The application should display the tasks in a table as shown in the screenshot provided. The main screen of the app should be designed in a pixel-perfect way to match the screenshot. 
+Your task is to create a ToDo app that interacts with an already provided ToDo API. The application should display the tasks in a table as shown in the screenshot provided. The main screen of the app should be designed to match the screenshot. 
 You will be using React for this task, and we expect you to leverage best practices for state management, component structure, and other aspects of a modern React application.
 
 ![main screen](screenshots/01_main_screen.png)
 
 ## Design
 
-To help you with the design, we have provided a screenshot of the application, a link to the Google font used in the app, and a Figma file. The Figma file should provide you with more granular details about the app's design. Your task is to replicate this design as closely as possible, focusing particularly on the main screen. We are looking for pixel-perfect precision here, so do pay attention to the details!
+To help you with the design, we have provided a screenshot of the application, a link to the Google font used in the app, and a Figma file. The Figma file should provide you with more granular details about the app's design. Your task is to replicate this design as closely as possible, focusing particularly on the main screen.
 
 - Google Font - [Nunito](https://fonts.google.com/specimen/Nunito?query=nunito)
 - Figma Design - [ToDo App Design](https://www.figma.com/file/bWThNKVhrueQ2T6Av8Erh8/To-do-list?node-id=0%3A1&t=J5sGg96ADAltbOFc-1)
@@ -21,20 +21,30 @@ To help you with the design, we have provided a screenshot of the application, a
 
 ## What we're looking for
 
-- Accurate implementation of the design
-- Correct usage of the provided API
 - Clean, modular, and maintainable code
 - Clear state management
+- Accurate implementation of the design
+- Correct usage of the provided API
 ## Instructions
 
-1. Create a new React application using `create-react-app` / `vite` or any other method you prefer.
-2. Set up your local development environment.
-3. Use the provided API key to fetch the data from the API.
-4. Implement the design as provided in the screenshot and Figma file.
-5. Your application should be able to run locally using the `npm start` command.
-6. Feel free to use your favorite packages or assistance via chatGPT 
+Create a new React application using `create-react-app` / `vite` or any other method you prefer.
+
+The task is divided into 6 steps. please pass each step at a time, but keep previous steps working. Try to complete as many steps as you can:
+  1. Start with implementing the basic functionality using local state - present a list of mock todo items in the main table + support sorting (by default items should be sorted by their created time ascending).
+  2. Make the table look as closely as you can to the design in the screenshots and Figma.
+  3. Add the top bar - TODO title, tasks summary legend and avatar.
+  4. Allow filtering by Incomplete / All.
+  5. Add the "Add todo" wizard.
+  6. Make everything work against the API.
+
+We know that this is a short time frame to get everything done, so please advance in the steps according to this order.
+
+Your application should be able to run locally using the `npm start` command.
+
+Feel free to use your favorite packages or assistance via ChatGPT
 
 Please note that the task is time-bound and should be completed within 3 hours.
+
 ## Submission
 
 Once you've finished, please follow these steps to submit your work:
