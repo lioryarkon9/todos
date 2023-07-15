@@ -38,7 +38,8 @@ Your goal is to dive into the code, and follow the below steps. Try to complete 
   5. Add a toggle to allow filtering by Incomplete / All.
   6. Add the "Add todo" wizard.
   7. Make everything work against the API.
-  8. *Bonus*: make the table look as closely as you can to the design in the screenshots and Figma.
+  8. Revamp the code at your desire. 
+  9. *Bonus*: make the table look as closely as you can to the design in the screenshots and Figma.
 
 We know that this is a short time frame to get everything done, so please advance in the steps according to this order.
 
@@ -46,7 +47,7 @@ Your application should be able to run locally using the `npm install` and `npm 
 
 Feel free to use your favorite packages or assistance via ChatGPT.
 
-Please note that the task is time-bound and should be completed within 2 hours.
+Please note that the task is time-bound and should be completed within 3 hours.
 
 ## Submission
 
