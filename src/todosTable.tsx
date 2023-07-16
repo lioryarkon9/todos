@@ -1,60 +1,17 @@
-import { Table, Radio, Select } from "antd";
+import { Table, Select, Checkbox } from "antd";
 import Moment from "react-moment";
+import React from "react";
+import { Todo } from "./types";
 
-type Todo = {
-  title: string;
-  status: string;
-  priority: number;
-  created_at: string;
-  id: string;
-};
+interface IProps {
+  todos: Todo[];
+  setTodos: (updatedTodos: Todo[]) => void;
+}
 
-const INITIAL_TODOS = [
-  {
-    priority: 3.0,
-    created_at: "1688565475.3983865",
-    id: "673ef381-6033-4d48-b97d-1879a9050f70",
-    status: "complete",
-    title: "Buy groceries",
-  },
-  {
-    priority: 2.0,
-    created_at: "1688565475.3984172",
-    id: "366a5ca2-bc1d-4531-9fb3-afdd44bbe3d5",
-    title: "Call mom",
-    status: "incomplete",
-  },
-  {
-    priority: 3.0,
-    created_at: "1688565475.3984244",
-    id: "9dc1a4b0-1e45-45f4-879f-dd240845df51",
-    status: "complete",
-    title: "Finish the report",
-  },
-  {
-    priority: 3.0,
-    created_at: "1688565475.3984303",
-    id: "5a1aacc0-7f5d-4016-b050-d8c027b0cfaa",
-    status: "complete",
-    title: "Prepare for the meeting",
-  },
-  {
-    priority: 2.0,
-    created_at: "1688565475.3984363",
-    id: "4ecb48ca-e0ba-46e0-9394-b5bb082c4d41",
-    status: "incomplete",
-    title: "Book a restaurant",
-  },
-  {
-    priority: 1.0,
-    created_at: "1688565475.3984423",
-    id: "84ec3c73-95a6-4c45-88dd-3735b1317adf",
-    status: "incomplete",
-    title: "Send an email to John",
-  },
-];
-
-export const TodosTable = () => {
+export const TodosTable: React.FunctionComponent<IProps> = ({
+  todos,
+  setTodos,
+}) => {
   const isToday = (date: Date) => {
     const today = new Date();
     return (
@@ -68,12 +25,37 @@ export const TodosTable = () => {
     {
       title: "",
       dataIndex: "status",
+      sorter: {
+        compare: (a: Todo, b: Todo) => b.status.localeCompare(a.status),
+      },
       key: "status",
-      render: (status: string) => <Radio checked={status === "complete"} />,
+      // render: (status: string) => <Radio checked={status === "complete"} />,
+      render: (status: string, currentTodo: Todo) => (
+        <Checkbox
+          checked={status === "complete"}
+          onChange={(event) => {
+            const updatedTodos = todos.map((todo) => {
+              if (todo.id === currentTodo.id) {
+                return {
+                  ...todo,
+                  status: event.target.checked ? "complete" : "incomplete",
+                };
+              }
+
+              return todo;
+            });
+
+            setTodos(updatedTodos);
+          }}
+        />
+      ),
     },
     {
       title: "Task Name",
       dataIndex: "title",
+      sorter: {
+        compare: (a: Todo, b: Todo) => b.title.localeCompare(a.title),
+      },
       key: "title",
       render: (title: string, todo: Todo) => {
         if (todo.status === "complete") {
@@ -86,6 +68,11 @@ export const TodosTable = () => {
     {
       title: "Created at",
       dataIndex: "created_at",
+      sorter: {
+        compare: (a: Todo, b: Todo) =>
+          parseFloat(b.created_at) - parseFloat(a.created_at),
+      },
+      defaultSortOrder: "ascend",
       key: "created_at",
       render: (created_at: string) =>
         isToday(new Date(parseFloat(created_at) * 1000)) ? (
@@ -99,9 +86,23 @@ export const TodosTable = () => {
     {
       title: "Priority",
       dataIndex: "priority",
+      sorter: {
+        compare: (a: Todo, b: Todo) => b.priority - a.priority,
+      },
       key: "priority",
-      render: (priority: number) => (
+      render: (priority: number, currentTodo: Todo) => (
         <Select
+          onChange={(priority) => {
+            const updatedTodos = todos.map((todo) => {
+              if (todo.id === currentTodo.id) {
+                return { ...todo, priority };
+              }
+
+              return todo;
+            });
+
+            setTodos(updatedTodos);
+          }}
           value={priority}
           options={[
             { value: 3.0, label: "High" },
@@ -113,5 +114,5 @@ export const TodosTable = () => {
     },
   ];
 
-  return <Table dataSource={INITIAL_TODOS} columns={columns} />;
+  return <Table dataSource={todos} columns={columns} />;
 };
