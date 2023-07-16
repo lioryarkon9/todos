@@ -31,15 +31,13 @@ To help you with the design, we have provided a screenshot of the application, a
 We've created a React app using [vite](https://vitejs.dev/guide/) for you, and have a very basic implementation that is full of bugs 😅
 Your goal is to dive into the code, and follow the below steps. Try to complete as many steps as you can:
 
-  1. Add sorting to the table - the table should be sorted by "Created At" ascending by default.
+  1. Add sorting to all table columns. The table should be sorted by "Created At" ascending by default.
   2. Make the priority dropdown work - currently the priority doesn't change when selecting a new one.
   3. Change the radio buttons next to the todo items to checkboxes. When a task is selected, it should be marked with a strikethrough (i.e. completed).
-  4. Add the top bar - tasks summary legend and avatar.
-  5. Add a toggle to allow filtering by Incomplete / All.
-  6. Add the "Add todo" wizard.
-  7. Make everything work against the API.
-  8. Revamp the code at your desire. 
-  9. *Bonus*: make the table look as closely as you can to the design in the screenshots and Figma.
+  4. Add the "Add todo" wizard.
+  5. Revamp the code at your desire.  
+  6. Make everything work against the API.
+  7. *Bonus*: make the table look as closely as you can to the design in the screenshots and Figma.
 
 We know that this is a short time frame to get everything done, so please advance in the steps according to this order.
 

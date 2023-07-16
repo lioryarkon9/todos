@@ -5,7 +5,7 @@ import { TodosTable } from "./todosTable";
 export const App = () => {
   return (
     <Layout>
-      <Header className={'todo-header'}>TODO</Header>
+      <Header className={'todo-header'}>TO DO LIST</Header>
       <Content>
         <TodosTable />
       </Content>
