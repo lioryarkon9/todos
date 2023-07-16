@@ -13,7 +13,7 @@ You will be using React for this task, and we expect you to leverage best practi
 
 ## Design
 
-To help you with the design, we have provided a screenshot of the application, a link to the Google font used in the app, and a Figma file. The Figma file should provide you with more granular details about the app's design. Your task is to replicate this design as closely as possible, focusing particularly on the main screen.
+To help you with the design, we have provided a screenshot of the application, a link to the Google font used in the app, and a Figma file. The Figma file should provide you with more granular details about the app's design.
 
 - Google Font - [Nunito](https://fonts.google.com/specimen/Nunito?query=nunito)
 - Figma Design - [ToDo App Design](https://www.figma.com/file/bWThNKVhrueQ2T6Av8Erh8/To-do-list?node-id=0%3A1&t=J5sGg96ADAltbOFc-1)
@@ -25,23 +25,27 @@ To help you with the design, we have provided a screenshot of the application, a
 - Clear state management
 - Accurate implementation of the design
 - Correct usage of the provided API
+
 ## Instructions
 
-Create a new React application using `create-react-app` / `vite` or any other method you prefer.
+We've created a React app using [vite](https://vitejs.dev/guide/) for you, and have a very basic implementation that is full of bugs 😅
+Your goal is to dive into the code, and follow the below steps. Try to complete as many steps as you can:
 
-The task is divided into 6 steps. Try to complete as many steps as you can:
-  1. Start with implementing the basic functionality using local state - present a list of mock todo items in the main table + support sorting (by default items should be sorted by their created time ascending).
-  2. Make the table look as closely as you can to the design in the screenshots and Figma.
-  3. Add the top bar - TODO title, tasks summary legend and avatar.
-  4. Allow filtering by Incomplete / All.
-  5. Add the "Add todo" wizard.
-  6. Make everything work against the API.
+  1. Add sorting to the table - the table should be sorted by "Created At" ascending by default.
+  2. Make the priority dropdown work - currently the priority doesn't change when selecting a new one.
+  3. Change the radio buttons next to the todo items to checkboxes. When a task is selected, it should be marked with a strikethrough (i.e. completed).
+  4. Add the top bar - tasks summary legend and avatar.
+  5. Add a toggle to allow filtering by Incomplete / All.
+  6. Add the "Add todo" wizard.
+  7. Make everything work against the API.
+  8. Revamp the code at your desire. 
+  9. *Bonus*: make the table look as closely as you can to the design in the screenshots and Figma.
 
 We know that this is a short time frame to get everything done, so please advance in the steps according to this order.
 
-Your application should be able to run locally using the `npm start` command.
+Your application should be able to run locally using the `npm install` and `npm run dev` commands.
 
-Feel free to use your favorite packages or assistance via ChatGPT
+Feel free to use your favorite packages or assistance via ChatGPT.
 
 Please note that the task is time-bound and should be completed within 3 hours.
 
